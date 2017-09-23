@@ -30,6 +30,9 @@ $(document).ready(function () {
     else if (uniqueQty == 4){
       rate = 0.8;
     }
+    else if (uniqueQty == 5){
+      rate = 0.75;
+    }
     $('#price').text(totalPrice * rate);
   }
 });
