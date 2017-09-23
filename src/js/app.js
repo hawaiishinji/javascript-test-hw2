@@ -12,9 +12,9 @@ $(document).ready(function () {
 
   function handleInputChange(){
 
-    const cart = getCart();
-    var totalPrice = cart.reduce((s, i) => s += 100 * i.qty, 0);
-    var uniqueQty = cart.reduce((s, i) => s += Math.min(1, i.qty), 0);
+    const qtys = getQtys();
+    var totalPrice = qtys.reduce((s, q) => s += 100 * q, 0);
+    var uniqueQty = qtys.reduce((s, q) => s += Math.min(1, q), 0);
     var discount = discountRate[uniqueQty-1] * uniqueQty * 100;
     setPriceToUI(totalPrice - discount);
   }
@@ -23,14 +23,12 @@ $(document).ready(function () {
     $('#price').text(price);
   }
 
-  function getCart(){
-    var cart = [];
+  function getQtys(){
+    var qtys = [];
     $('.product').each(function () {
       var qty = $(this).find('input').val();
-      cart.push({
-        qty: qty
-      })
+      qtys.push(qty)
     });
-    return cart;
+    return qtys;
   }
 });
