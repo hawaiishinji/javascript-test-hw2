@@ -2,7 +2,6 @@
 
 哈利波特一到五冊熱潮正席捲全球，世界各地的孩子都為之瘋 狂。#出版社為了慶祝Agile Tour第一次在台灣舉辦，決定訂 出極大的優惠，來回饋給為了小孩四處奔波買書的父母親們。
 
-
 ### 定價的方式如下:
 
 - 一到五集的哈利波特，每一本都是賣100元
@@ -14,3 +13,7 @@
 
 
 你的任務是，設計一個哈利波特的購物車，能提供最便宜的價 格給這些爸爸媽媽。
+
+
+### Screenshot
+![screenshot](https://raw.githubusercontent.com/hawaiishinji/javascript-test-hw2/master/screenshot.png)
