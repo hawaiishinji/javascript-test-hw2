@@ -33,6 +33,6 @@ $(document).ready(function () {
     else if (uniqueQty == 5){
       rate = 0.75;
     }
-    $('#price').text(totalPrice * rate);
+    $('#price').text(totalPrice - (1 - rate) * uniqueQty * 100);
   }
 });
