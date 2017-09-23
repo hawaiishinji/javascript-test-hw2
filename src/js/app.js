@@ -7,5 +7,6 @@ $(document).ready(function () {
 
     $('input[name=qty]').on('change', function () {
 
+        $('#price').text('100');
     });
 });
