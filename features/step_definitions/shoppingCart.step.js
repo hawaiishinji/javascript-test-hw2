@@ -10,6 +10,7 @@ defineSupportCode(function ({ Given, When, Then }) {
   });
 
   Given('選擇第 {string} 集，數量 {string} 一本', async function (index, qty) {
+    console.log('' + index + ' ' +qty );
     await this.driver
         .insert(`div.product:nth-child(${index}) input[name=qty]`, false)
         .insert(`div.product:nth-child(${index}) input[name=qty]`, +qty);
