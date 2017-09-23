@@ -27,6 +27,9 @@ $(document).ready(function () {
     else if (uniqueQty == 3){
       rate = 0.9;
     }
+    else if (uniqueQty == 4){
+      rate = 0.8;
+    }
     $('#price').text(totalPrice * rate);
   }
 });
